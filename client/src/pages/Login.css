@@ -1,0 +1,112 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  background-color: var(--background-color-light);
+  transition: var(--background-color-light) 0.3s ease;
+}
+
+.dark-theme .login-container {
+  background-color: var(--background-color-dark);
+}
+
+.login-form {
+  background: var(--card-background-color-light);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 450px;
+  text-align: center;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dark-theme .login-form {
+  background: var(--card-background-color-dark);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.login-form h2 {
+  margin-bottom: 30px;
+  color: var(--text-color-light);
+  font-size: 32px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.dark-theme .login-form h2 {
+  color: var(--text-color-dark);
+}
+
+.form-group {
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--text-color-light);
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.dark-theme .form-group label {
+  color: var(--text-color-dark);
+}
+
+.form-group input[type="email"],
+.form-group input[type="password"] {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid var(--border-color-light);
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+  background-color: var(--input-background-color-light);
+  color: var(--text-color-light);
+  transition: border-color 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-theme .form-group input[type="email"],
+.dark-theme .form-group input[type="password"] {
+  border-color: var(--border-color-dark);
+  background-color: var(--input-background-color-dark);
+  color: var(--text-color-dark);
+}
+
+.form-group input[type="email"]:focus,
+.form-group input[type="password"]:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+.login-button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  width: 100%;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.login-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.error-message {
+  color: #dc3545;
+  margin-bottom: 15px;
+  font-size: 14px;
+  background-color: rgba(220, 53, 69, 0.1);
+  padding: 10px;
+  border-radius: 5px;
+}

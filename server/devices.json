@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Living Room AC",
+    "type": "AC",
+    "status": "OFF",
+    "location": "Living Room",
+    "automations": [
+      { "sensorType": "temperature", "threshold": 26, "condition": "GREATER_THAN", "action": "ON" },
+      { "sensorType": "temperature", "threshold": 22, "condition": "LESS_THAN", "action": "OFF" }
+    ]
+  },
+  {
+    "name": "Office Ceiling Light",
+    "type": "LIGHT",
+    "status": "OFF",
+    "location": "Office",
+    "automations": [
+      { "sensorType": "light", "threshold": 400, "condition": "LESS_THAN", "action": "ON" },
+      { "sensorType": "light", "threshold": 800, "condition": "GREATER_THAN", "action": "OFF" }
+    ]
+  },
+  {
+    "name": "Hallway Light",
+    "type": "LIGHT",
+    "status": "OFF",
+    "location": "Hallway",
+    "automations": [
+      { "sensorType": "motion", "threshold": 1, "condition": "EQUALS", "action": "ON" }
+    ]
+  },
+  {
+    "name": "Kitchen Exhaust Fan",
+    "type": "AC",
+    "status": "OFF",
+    "location": "Kitchen",
+    "automations": [
+      { "sensorType": "gas", "threshold": 55, "condition": "GREATER_THAN", "action": "ON" }
+    ]
+  },
+  {
+    "name": "Living Room Smart Plug",
+    "type": "COFFEE_MACHINE",
+    "status": "OFF",
+    "location": "Living Room",
+    "automations": []
+  }
+]

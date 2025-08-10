@@ -1,0 +1,189 @@
+:root {
+  /* Light theme colors */
+  --background-color-light: #f0f2f5;
+  --text-color-light: #333;
+  --card-background-color-light: #fff;
+  --border-color-light: #ddd;
+  --input-background-color-light: #fff;
+  --primary-color: #007bff; /* Blue for primary actions */
+  --success-color: #28a745; /* Green for success actions */
+  --navbar-background-light: #343a40;
+  --navbar-text-light: #f8f9fa;
+  --footer-background-light: #343a40;
+  --footer-text-light: #f8f9fa;
+}
+
+.dark-theme {
+  /* Dark theme colors */
+  --background-color-dark: #282c34;
+  --text-color-dark: #f8f9fa;
+  --card-background-color-dark: #3a3f47;
+  --border-color-dark: #555;
+  --input-background-color-dark: #4a4f58;
+  --primary-color: #61dafb; /* Lighter blue for dark theme primary */
+  --success-color: #4CAF50; /* Green for success actions */
+  --navbar-background-dark: #20232a;
+  --navbar-text-dark: #ffffff;
+  --footer-background-dark: #20232a;
+  --footer-text-dark: #61dafb;
+}
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+html,
+body {
+  background-color: var(--background-color-light) !important;
+  color: var(--text-color-light) !important;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-theme html,
+.dark-theme body {
+  background-color: var(--background-color-dark) !important;
+  color: var(--text-color-dark) !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Add some responsive padding */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Override Bootstrap's .container-fluid padding */
+/* .container-fluid {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+  width: 100% !important;
+} */
+
+/* Basic button styling */
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--primary-color);
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #0056b3; /* A darker shade of primary-color for hover */
+}
+
+/* Basic input styling */
+input, select, textarea {
+  padding: 0.5rem;
+  border: 1px solid var(--border-color-light);
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: var(--input-background-color-light);
+  color: var(--text-color-light);
+  transition: border-color 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-theme input, .dark-theme select, .dark-theme textarea {
+  border-color: var(--border-color-dark);
+  background-color: var(--input-background-color-dark);
+  color: var(--text-color-dark);
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(0,123,255,0.25);
+}
+
+/* Navbar theme styles */
+.navbar-themed-container {
+  width: 100%;
+   /* Add some padding to the sides */
+}
+
+.navbar {
+  background-color: var(--navbar-background-light) !important;
+  transition: background-color 0.3s ease;
+  border-bottom: 1px solid var(--border-color-light);
+}
+
+.dark-theme .navbar {
+  background-color: var(--navbar-background-dark) !important;
+  border-color: var(--border-color-dark);
+}
+
+.navbar-brand-themed {
+  color: var(--navbar-text-light) !important;
+  transition: color 0.3s ease;
+}
+
+.dark-theme .navbar-brand-themed {
+  color: var(--navbar-text-dark) !important;
+}
+
+.nav-link-themed {
+  color: var(--navbar-text-light) !important;
+  transition: color 0.3s ease;
+}
+
+.dark-theme .nav-link-themed {
+  color: var(--navbar-text-dark) !important;
+}
+
+.btn-link-themed {
+  color: var(--navbar-text-light) !important;
+  transition: color 0.3s ease;
+}
+
+.dark-theme .btn-link-themed {
+  color: var(--navbar-text-dark) !important;
+}
+
+/* Login and Signup Form Backgrounds */
+.login-container,
+.signup-container {
+  background-color: var(--background-color-light) !important;
+}
+
+.dark-theme .login-container,
+.dark-theme .signup-container {
+  background-color: var(--background-color-dark) !important;
+}
+
+.login-form,
+.signup-form {
+  background: var(--card-background-color-light) !important;
+}
+
+.dark-theme .login-form,
+.dark-theme .signup-form {
+  background: var(--card-background-color-dark) !important;
+}
+
+/* Footer theme styles */
+.footer {
+  background-color: var(--footer-background-light);
+  color: var(--footer-text-light);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-theme .footer {
+  background-color: var(--footer-background-dark);
+  color: var(--footer-text-dark);
+}

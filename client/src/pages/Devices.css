@@ -1,0 +1,175 @@
+.devices-container {
+  padding: 20px;
+  background-color: var(--background-color-light);
+  color: var(--text-color-light);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-theme .devices-container {
+  background-color: var(--background-color-dark);
+  color: var(--text-color-dark);
+}
+
+.devices-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.devices-header h1 {
+  color: var(--text-color-light);
+  transition: color 0.3s ease;
+}
+
+.dark-theme .devices-header h1 {
+  color: var(--text-color-dark);
+}
+
+.add-device-button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.add-device-button:hover {
+  background-color: #0056b3;
+}
+
+.add-device-form-container {
+  background: var(--card-background-color-light);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dark-theme .add-device-form-container {
+  background: var(--card-background-color-dark);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.add-device-form-container h3 {
+  margin-bottom: 25px;
+  color: var(--text-color-light);
+  transition: color 0.3s ease;
+}
+
+.dark-theme .add-device-form-container h3 {
+  color: var(--text-color-dark);
+}
+
+.add-device-form .form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.add-device-form label {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--text-color-light);
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.dark-theme .add-device-form label {
+  color: var(--text-color-dark);
+}
+
+.add-device-form input[type="text"],
+.add-device-form input[type="number"],
+.add-device-form select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--border-color-light);
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+  background-color: var(--input-background-color-light);
+  color: var(--text-color-light);
+  transition: border-color 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-theme .add-device-form input,
+.dark-theme .add-device-form select {
+  border-color: var(--border-color-dark);
+  background-color: var(--input-background-color-dark);
+  color: var(--text-color-dark);
+}
+
+.add-device-form input:focus,
+.add-device-form select:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+.add-device-form h4 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: var(--text-color-light);
+  transition: color 0.3s ease;
+}
+
+.dark-theme .add-device-form h4 {
+  color: var(--text-color-dark);
+}
+
+.submit-button {
+  background-color: var(--success-color);
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  width: 100%;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #218838;
+}
+
+.device-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  padding: 20px 0;
+}
+
+.device-grid p {
+  text-align: center;
+  grid-column: 1 / -1; /* Center text in the grid */
+  color: var(--text-color-light);
+  transition: color 0.3s ease;
+}
+
+.dark-theme .device-grid p {
+  color: var(--text-color-dark);
+}
+
+.success-message {
+  color: #28a745;
+  margin-bottom: 15px;
+  font-size: 14px;
+  background-color: rgba(40, 167, 69, 0.1);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.error-message {
+  color: #dc3545;
+  margin-bottom: 15px;
+  font-size: 14px;
+  background-color: rgba(220, 53, 69, 0.1);
+  padding: 10px;
+  border-radius: 5px;
+}

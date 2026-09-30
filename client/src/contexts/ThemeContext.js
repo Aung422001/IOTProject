@@ -11,6 +11,7 @@ export const ThemeProvider = ({ children }) => {
   useEffect(() => {
     localStorage.setItem('theme', theme);
     document.body.className = theme + '-theme';
+    document.documentElement.className = theme + '-theme';
     console.log('Applied theme:', theme + '-theme'); // Added console.log
   }, [theme]);
 

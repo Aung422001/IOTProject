@@ -1,0 +1,313 @@
+.home {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px 10px 60px;
+}
+
+.home-hero {
+  text-align: center;
+  padding: 60px 20px 50px;
+}
+
+.home-hero-badge {
+  display: inline-block;
+  padding: 6px 16px;
+  border-radius: 999px;
+  background-color: rgba(0, 123, 255, 0.12);
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.home-hero h1 {
+  font-size: 42px;
+  font-weight: 700;
+  margin: 0 0 16px;
+  color: var(--text-color-light);
+  transition: color 0.3s ease;
+}
+
+.dark-theme .home-hero h1 {
+  color: var(--text-color-dark);
+}
+
+.home-hero-subtitle {
+  font-size: 18px;
+  max-width: 640px;
+  margin: 0 auto 30px;
+  color: var(--text-color-light);
+  opacity: 0.85;
+  line-height: 1.6;
+  transition: color 0.3s ease;
+}
+
+.dark-theme .home-hero-subtitle {
+  color: var(--text-color-dark);
+}
+
+.home-hero-actions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.home-btn {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  transition: background-color 0.2s ease, transform 0.2s ease, color 0.2s ease;
+}
+
+.home-btn-primary {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.home-btn-primary:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.home-btn-secondary {
+  background-color: transparent;
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  padding: 12px 26px;
+}
+
+.home-btn-secondary:hover {
+  background-color: rgba(0, 123, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+.home-hero-badges {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.home-tech-pill {
+  background-color: var(--card-background-color-light);
+  border: 1px solid var(--border-color-light);
+  color: var(--text-color-light);
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-theme .home-tech-pill {
+  background-color: var(--card-background-color-dark);
+  border-color: var(--border-color-dark);
+  color: var(--text-color-dark);
+}
+
+.home-section {
+  margin: 60px 0;
+}
+
+.home-section-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 36px;
+  color: var(--text-color-light);
+  transition: color 0.3s ease;
+}
+
+.dark-theme .home-section-title {
+  color: var(--text-color-dark);
+}
+
+.home-features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.home-feature-card {
+  background-color: var(--card-background-color-light);
+  border: 1px solid var(--border-color-light);
+  border-radius: 12px;
+  padding: 26px;
+  text-align: left;
+  transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
+}
+
+.home-feature-card:hover {
+  transform: translateY(-4px);
+}
+
+.dark-theme .home-feature-card {
+  background-color: var(--card-background-color-dark);
+  border-color: var(--border-color-dark);
+}
+
+.home-feature-icon {
+  font-size: 30px;
+  margin-bottom: 14px;
+}
+
+.home-feature-card h3 {
+  margin: 0 0 10px;
+  font-size: 18px;
+  color: var(--text-color-light);
+  transition: color 0.3s ease;
+}
+
+.dark-theme .home-feature-card h3 {
+  color: var(--text-color-dark);
+}
+
+.home-feature-card p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text-color-light);
+  opacity: 0.8;
+  transition: color 0.3s ease;
+}
+
+.dark-theme .home-feature-card p {
+  color: var(--text-color-dark);
+}
+
+.home-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.home-step-card {
+  background-color: var(--card-background-color-light);
+  border: 1px solid var(--border-color-light);
+  border-radius: 12px;
+  padding: 26px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.dark-theme .home-step-card {
+  background-color: var(--card-background-color-dark);
+  border-color: var(--border-color-dark);
+}
+
+.home-step-number {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.home-step-card h3 {
+  margin: 0 0 10px;
+  font-size: 17px;
+  color: var(--text-color-light);
+  transition: color 0.3s ease;
+}
+
+.dark-theme .home-step-card h3 {
+  color: var(--text-color-dark);
+}
+
+.home-step-card p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text-color-light);
+  opacity: 0.8;
+  transition: color 0.3s ease;
+}
+
+.dark-theme .home-step-card p {
+  color: var(--text-color-dark);
+}
+
+.home-stack-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.home-stack-group {
+  background-color: var(--card-background-color-light);
+  border: 1px solid var(--border-color-light);
+  border-radius: 12px;
+  padding: 22px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.dark-theme .home-stack-group {
+  background-color: var(--card-background-color-dark);
+  border-color: var(--border-color-dark);
+}
+
+.home-stack-group h4 {
+  margin: 0 0 12px;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--primary-color);
+}
+
+.home-stack-group ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.home-stack-group li {
+  padding: 4px 0;
+  font-size: 14px;
+  color: var(--text-color-light);
+  transition: color 0.3s ease;
+}
+
+.dark-theme .home-stack-group li {
+  color: var(--text-color-dark);
+}
+
+.home-cta {
+  text-align: center;
+  padding: 50px 20px;
+  border-radius: 16px;
+  background-color: var(--card-background-color-light);
+  border: 1px solid var(--border-color-light);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.dark-theme .home-cta {
+  background-color: var(--card-background-color-dark);
+  border-color: var(--border-color-dark);
+}
+
+.home-cta h2 {
+  margin: 0 0 12px;
+  font-size: 26px;
+  color: var(--text-color-light);
+  transition: color 0.3s ease;
+}
+
+.dark-theme .home-cta h2 {
+  color: var(--text-color-dark);
+}
+
+.home-cta p {
+  margin: 0 0 24px;
+  color: var(--text-color-light);
+  opacity: 0.8;
+  transition: color 0.3s ease;
+}
+
+.dark-theme .home-cta p {
+  color: var(--text-color-dark);
+}

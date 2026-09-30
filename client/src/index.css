@@ -43,7 +43,9 @@ body {
 }
 
 .dark-theme html,
-.dark-theme body {
+.dark-theme body,
+html.dark-theme,
+body.dark-theme {
   background-color: var(--background-color-dark) !important;
   color: var(--text-color-dark) !important;
 }

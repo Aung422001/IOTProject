@@ -1,7 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import './App.css';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import Home from './pages/Home'; // Public project showcase page
 import Login from './pages/Login';
 import Signup from './pages/Signup';
 import ProtectedRoute from './ProtectedRoute';
@@ -14,9 +16,9 @@ function App() {
       <div className="app">
         <Navbar />
         <Routes>
+          <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
-          <Route path="/" element={<ProtectedRoute><Devices /></ProtectedRoute>} />
           <Route path="/devices" element={<ProtectedRoute><Devices /></ProtectedRoute>} />
           <Route path="/sensors" element={<ProtectedRoute><Sensors /></ProtectedRoute>} />
         </Routes>
